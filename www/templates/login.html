@@ -1,0 +1,37 @@
+<ion-view class="code-screen theme-bg">
+
+    <ion-header-bar align-title="center" class="bar-positive trans-header">
+        <!--<div class="buttons">
+            <button class="button button-icon icon ion-chevron-left" ui-sref="login"></button>
+        </div>-->
+        <h1 class="title">SeeMee</h1>
+        <!--<div class="buttons">
+            <button class="button">Right Button</button>
+        </div>-->
+    </ion-header-bar>
+
+    <ion-content class="" scroll="false">
+
+        <div class="code-form">
+            <div class="heading">
+                <h4 class="text-center">Enter Your Code</h4>
+            </div>
+            <div class="list list-inset">
+                <label class="item item-input">
+                    <input class="code-input" type="text" maxlength="9" placeholder="●●●●●" ng-model="data.code">
+                </label>
+            </div>
+            <div class="padding-left padding-right">
+                <button class="button button-balanced button-block" ng-click="login()">
+                    Begin
+                </button>
+            </div>
+        </div>
+
+    </ion-content>
+
+    <ion-footer-bar align-title="center" class="bar-positive my-footer">
+        <h1 class="title">Enter the code provided by the employer</h1>
+    </ion-footer-bar>
+
+</ion-view>

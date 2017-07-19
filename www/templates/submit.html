@@ -1,0 +1,30 @@
+<ion-view class="submit-screen theme-bg">
+
+    <ion-header-bar align-title="center" class="bar-positive my-header">
+        <h1 class="title">SeeMee</h1>
+    </ion-header-bar>
+
+    <ion-content class="" scroll="false">
+
+        <div class="question-section">
+            <h4>{{question_id}}/{{total_questions}}</h4>
+            <div class="question-box">
+                {{question}}
+            </div>
+            <div class="video-box">
+                <button class="button button-dark icon ion-play play-btn" ui-sref="submit"></button>
+            </div>
+
+            <button class="button button-assertive icon-left ion-refresh retake-btn" ui-sref="recording">
+                Retake
+            </button>
+            &nbsp;
+            <button class="button button-balanced icon-left ion-arrow-right-a submit-btn" ui-sref="uploading">
+                Submit
+            </button>
+
+        </div>
+
+    </ion-content>
+
+</ion-view>

@@ -1,0 +1,32 @@
+<ion-view class="job-listing-screen theme-bg">
+
+    <ion-header-bar align-title="center" class="bar-positive my-header">
+        <h3 class="title" style="font-size:14px;">Please select a job to begin the interview</h3>
+    </ion-header-bar>
+
+    <ion-content class="">
+
+        <div class="list" ng-init="getAllJobs()">
+
+            <a class="item item-icon-left item-icon-right" style="padding-left:10px;padding-right:10px;" ng-click="getAllQuestions(4124)"  >
+                <i ></i>
+               This is Test Job
+               
+
+                
+            </a>
+
+            <a class="item item-icon-left item-icon-right" style="padding-left:10px; padding-right:10px;" ng-click="getAllQuestions(job.job_id)" ng-repeat="job in Jobs.data" >
+                <i ></i>
+
+               {{job.job_title}}
+               
+
+                
+            </a>
+
+        </div>
+
+    </ion-content>
+
+</ion-view>
